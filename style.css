@@ -1,0 +1,202 @@
+* {
+  box-sizing: border-box;
+}
+/* 基本設置 */
+html,
+body {
+  margin: 0px;
+  font-family: "Roboto", "Noto Sans TC", sans-serif;
+  background-color: #fcf9ee;
+}
+h1 {
+  font-size: 32px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  min-width: 300px;
+}
+
+/* 頭頂 */
+header {
+  background-color: #ffd06b;
+}
+
+var {
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto 10px;
+  padding: 0px 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+li {
+  display: inline-block;
+}
+
+#heart {
+  width: 20px;
+}
+
+#heart:hover {
+  cursor: pointer;
+}
+
+button.heart-click {
+  background: #ffd06b;
+  border: none;
+}
+
+/* 主內容 */
+
+main {
+  max-width: 1000px;
+  margin: 50px auto 0;
+}
+
+.personal-data {
+  display: flex;
+  align-items: center;
+  max-width: 1000px;
+}
+/* 主內容－照片 */
+
+.personal-avatar {
+  min-width: 500px;
+  text-align: center;
+  margin-left: 0px;
+}
+
+.avatar {
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+/* 主內容－文字描述 */
+.personal-information {
+  width: 50%;
+  padding-left: 100px;
+  text-align: justify;
+}
+
+.tag {
+  display: inline-block;
+  border: 2px solid #ffd06b;
+  border-radius: 8px;
+  padding: 2px 12px;
+  margin: 3px;
+  word-break: keep-all;
+}
+
+.tag:hover {
+  color: white;
+  background-color: #ffd06b;
+  border: 2px solid white;
+}
+
+/* 連結區 */
+
+.the-gate {
+  display: inline-block;
+  position: relative;
+  font-size: 40px;
+  width: 32%;
+  text-align: center;
+}
+
+.fa-user-pen:hover {
+  color: #ff9203;
+}
+
+.fa-user-pen:hover::after {
+  font-size: 15px;
+  content: "個人簡介";
+  position: absolute;
+  top: 50px;
+  left: 15px;
+}
+
+.fa-briefcase:hover {
+  color: #ff9203;
+}
+
+.fa-briefcase:hover::after {
+  font-size: 15px;
+  content: "工作經驗";
+  position: absolute;
+  top: 50px;
+  left: 18px;
+}
+
+.fa-gamepad:hover {
+  color: #ff9203;
+}
+
+.fa-gamepad:hover::after {
+  font-size: 15px;
+  content: "作品集";
+  position: absolute;
+  top: 50px;
+  left: 27px;
+}
+
+/* 尾巴 */
+footer {
+  margin-top: 50px;
+  text-align: center;
+  background-color: #666666;
+}
+
+/* section.bottom {
+  display : inline-block ;
+  width : 820px ;
+  outline : 2px solid red ;
+  font-size : 25px ;
+  align-items : center ;
+}
+
+.social-media {
+  text-decoration : none ;
+}
+
+.footer-text {
+  margin-bottom : 2px ;
+} */
+
+section.bottom {
+  display: flex;
+  width: 1000px;
+  font-size: 25px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media {
+  text-decoration: none;
+  font-size: 30px;
+  margin-left: 10px;
+  color: #ffa1ff;
+}
+
+.social-media:hover {
+  color: white;
+}
+
+.footer-text {
+  margin-bottom: 2px;
+  margin-right: 10px;
+  font-size: 20px;
+  color: white;
+}
+
+.social-media-cel {
+  margin-left: 15px;
+  align-items: center;
+  text-decoration: none;
+}
+
+.my-phone {
+  font-size: 15px;
+  display: block;
+  color: white;
+}
