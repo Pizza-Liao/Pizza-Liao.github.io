@@ -103,6 +103,10 @@ main {
   text-align: center;
 }
 
+.fa-user-pen {
+  color : #2e2b33 ;
+}
+
 .fa-user-pen:hover {
   color: #ff9203;
 }
@@ -115,6 +119,10 @@ main {
   left: 15px;
 }
 
+.fa-briefcase {
+  color : #2e2b33 ;
+}
+
 .fa-briefcase:hover {
   color: #ff9203;
 }
@@ -125,6 +133,10 @@ main {
   position: absolute;
   top: 50px;
   left: 18px;
+}
+
+.fa-gamepad {
+  color : #2e2b33 ;
 }
 
 .fa-gamepad:hover {
