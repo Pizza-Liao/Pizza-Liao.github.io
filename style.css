@@ -4,15 +4,19 @@
 /* 基本設置 */
 html,
 body {
+  /*   box-model */
   margin: 0px;
   font-family: "Roboto", "Noto Sans TC", sans-serif;
   background-color: #fcf9ee;
 }
+
 h1 {
-  font-size: 32px;
+  /*   box-model */
   margin-top: 0px;
   margin-bottom: 10px;
   min-width: 300px;
+  /*   font & others */
+  font-size: 32px;
 }
 
 /* 頭頂 */
@@ -21,12 +25,14 @@ header {
 }
 
 var {
+  /*   display */
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /*   box-model */
   max-width: 1000px;
   margin: 0 auto 10px;
   padding: 0px 20px;
-  align-items: center;
-  justify-content: space-between;
 }
 
 li {
@@ -54,15 +60,19 @@ main {
 }
 
 .personal-data {
+  /*   display */
   display: flex;
   align-items: center;
+  /*   box-model */
   max-width: 1000px;
 }
 /* 主內容－照片 */
 
 .personal-avatar {
-  min-width: 500px;
+  /*   display */
   text-align: center;
+  /*   box-model */
+  min-width: 500px;
   margin-left: 0px;
 }
 
@@ -75,15 +85,17 @@ main {
 .personal-information {
   width: 50%;
   padding-left: 100px;
-  text-align: justify;
 }
 
 .tag {
+  /*   display */
   display: inline-block;
+  /*   box-model */
   border: 2px solid #ffd06b;
   border-radius: 8px;
   padding: 2px 12px;
   margin: 3px;
+  /*   font & others */
   word-break: keep-all;
 }
 
@@ -96,15 +108,18 @@ main {
 /* 連結區 */
 
 .the-gate {
+  /*   display */
   display: inline-block;
   position: relative;
-  font-size: 40px;
+  /*   box-model */
   width: 32%;
+  /*   font & others */
+  font-size: 40px;
   text-align: center;
 }
 
 .fa-user-pen {
-  color : #2e2b33 ;
+  color: #2e2b33;
 }
 
 .fa-user-pen:hover {
@@ -112,15 +127,17 @@ main {
 }
 
 .fa-user-pen:hover::after {
+  /*   display */
+  position: absolute;
+  /*   font & others */
   font-size: 15px;
   content: "個人簡介";
-  position: absolute;
   top: 50px;
   left: 15px;
 }
 
 .fa-briefcase {
-  color : #2e2b33 ;
+  color: #2e2b33;
 }
 
 .fa-briefcase:hover {
@@ -128,15 +145,17 @@ main {
 }
 
 .fa-briefcase:hover::after {
+  /*   display */
+  position: absolute;
+  /*   font & others */
   font-size: 15px;
   content: "工作經驗";
-  position: absolute;
   top: 50px;
   left: 18px;
 }
 
 .fa-gamepad {
-  color : #2e2b33 ;
+  color: #2e2b33;
 }
 
 .fa-gamepad:hover {
@@ -144,46 +163,40 @@ main {
 }
 
 .fa-gamepad:hover::after {
+  /*   display */
+  position: absolute;
+  /*   font & others */
   font-size: 15px;
   content: "作品集";
-  position: absolute;
   top: 50px;
   left: 27px;
 }
 
 /* 尾巴 */
 footer {
+  /*   box-model */
   margin-top: 50px;
+  /*   font & others */
   text-align: center;
   background-color: #666666;
 }
 
-/* section.bottom {
-  display : inline-block ;
-  width : 820px ;
-  outline : 2px solid red ;
-  font-size : 25px ;
-  align-items : center ;
-}
-
-.social-media {
-  text-decoration : none ;
-}
-
-.footer-text {
-  margin-bottom : 2px ;
-} */
 
 section.bottom {
+  /*   display */
   display: flex;
+  /*   box-model */
   width: 1000px;
-  font-size: 25px;
   margin: 0 auto;
-  justify-content: center;
   align-items: center;
+  /*   font & others */
+  font-size: 25px;
+  justify-content: center;
+  
 }
 
 .social-media {
+  /*   font & others */
   text-decoration: none;
   font-size: 30px;
   margin-left: 10px;
@@ -195,20 +208,26 @@ section.bottom {
 }
 
 .footer-text {
+  /*   box-model */
   margin-bottom: 2px;
   margin-right: 10px;
+  /*   font & others */
   font-size: 20px;
   color: white;
 }
 
 .social-media-cel {
+  /*   box-model */
   margin-left: 15px;
+  /*   font & others */
   align-items: center;
   text-decoration: none;
 }
 
 .my-phone {
-  font-size: 15px;
+  /*   display */
   display: block;
+  /*   font & others */
+  font-size: 15px;
   color: white;
 }
